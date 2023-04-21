@@ -15,4 +15,7 @@ chmod +x ~/fastp-single.sh
 ./fastp-single.sh 150 /tmp/gen711_project_data/FMT_3/fmt-tutorial-demux-2 trimmed_fastqs
 ./fastp-single.sh 150 /tmp/gen711_project_data/FMT_3/fmt-tutorial-demux-1 trimmed_fastqs
 
-~/fastp.sh <1.poly-g length> <1.path to fastq directory>  <3.path to your output directory>
+~/fastp.sh <1.poly-g length> <1.path to fastq directory>  <3.path to your output directory>   --type "SampleData[PairedEndSequencesWithQuality]"  \
+   --input-format CasavaOneEightSingleLanePerSampleDirFmt \
+   --input-path <path to your output directory of trimmed fastqs> \
+   --output-path <path to an output directory>/<a name for the output files>
